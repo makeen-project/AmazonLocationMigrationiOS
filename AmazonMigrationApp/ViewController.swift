@@ -11,13 +11,17 @@ import AWSLocationXCF
 
 class ViewController: UIViewController, MGLMapViewDelegate {
 
-    let apiKey = "v1.public.eyJqdGkiOiIwYjgwOTcyZC1lZmFlLTQwZTMtODE1MS01N2QyYjliYTdlM2MifUuoYYLrXgQbEB_whcmqolAq348iEM0RXu5PZtEzrB0nKCHvlQF9yM-Q0nwb3EwW_igoqnUy3NIORr9osmGC5WR4OqehLKSxeBHbZHI0A2f6pK9CdrezSc-wKrHyyfNipzTVyS-iVEqYQZGGT3RL2DMw7dygkhoCREbDRIPX44bwDPDYBWpvQ6chS94nhZi2uByn42uLbTdhe7cBuKPw8ZcxSqg3QoOC1-FbvIel2qQXjW31A4RtzTfaLnHJP5xUNeol6XCxqJlggGNQyKMa8UD17D9Ck4JbOPGh62QfAeOOAC99TAL23t6sILCtx1nXsZKYUW7HiHTJXcROgialcls.ZWU0ZWIzMTktMWRhNi00Mzg0LTllMzYtNzlmMDU3MjRmYTkx"
-    let mapName = "explore.map.Esri"
-    let regionName = "us-east-1"
+    var apiKey = Bundle.main.infoDictionary?["apiKey"] as! String
+    var mapName = Bundle.main.infoDictionary?["mapName"] as! String
+    var regionName = Bundle.main.infoDictionary?["regionName"] as! String
     private var mapView: MGLMapView?
     private var searchTableView: UITableView?
     var searchResults: [String] = []
    
+    func getValue(Key: String) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

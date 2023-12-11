@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>apiKey</key>
+	<string>$(API_KEY)</string>
+	<key>mapName</key>
+	<string>$(MAP_NAME)</string>
+	<key>regionName</key>
+	<string>$(REGION_NAME)</string>
 </dict>
 </plist>

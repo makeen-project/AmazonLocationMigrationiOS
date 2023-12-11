@@ -22,6 +22,7 @@
 		F12F5AE22B14D8DE00C25241 /* AWSCognitoIdentityProviderASF in Frameworks */ = {isa = PBXBuildFile; productRef = F12F5AE12B14D8DE00C25241 /* AWSCognitoIdentityProviderASF */; };
 		F12F5AE42B14D8DE00C25241 /* AWSLocationXCF in Frameworks */ = {isa = PBXBuildFile; productRef = F12F5AE32B14D8DE00C25241 /* AWSLocationXCF */; };
 		F12F5AE62B14D8DE00C25241 /* AWSMobileClientXCF in Frameworks */ = {isa = PBXBuildFile; productRef = F12F5AE52B14D8DE00C25241 /* AWSMobileClientXCF */; };
+		F14FEC582B27524C0072019C /* AWSConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F14FEC572B27524C0072019C /* AWSConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F12F5AC32B0CFDE900C25241 /* AmazonMigrationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonMigrationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F5AC72B0CFDE900C25241 /* AmazonMigrationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonMigrationAppUITests.swift; sourceTree = "<group>"; };
 		F12F5AC92B0CFDE900C25241 /* AmazonMigrationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonMigrationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F14FEC572B27524C0072019C /* AWSConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AWSConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				F12F5AAF2B0CFDE900C25241 /* Assets.xcassets */,
 				F12F5AB12B0CFDE900C25241 /* LaunchScreen.storyboard */,
 				F12F5AB42B0CFDE900C25241 /* Info.plist */,
+				F14FEC572B27524C0072019C /* AWSConfig.xcconfig */,
 			);
 			path = AmazonMigrationApp;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				F12F5AB32B0CFDE900C25241 /* LaunchScreen.storyboard in Resources */,
 				F12F5AB02B0CFDE900C25241 /* Assets.xcassets in Resources */,
+				F14FEC582B27524C0072019C /* AWSConfig.xcconfig in Resources */,
 				F12F5AAE2B0CFDE800C25241 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +346,7 @@
 /* Begin XCBuildConfiguration section */
 		F12F5ACB2B0CFDE900C25241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14FEC572B27524C0072019C /* AWSConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -402,6 +407,7 @@
 		};
 		F12F5ACC2B0CFDE900C25241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14FEC572B27524C0072019C /* AWSConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
